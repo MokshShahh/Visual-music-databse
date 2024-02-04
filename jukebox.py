@@ -69,7 +69,7 @@ class DataListBox(Scrollbox):
 
     def on_select(self, event):
         if self.linked_box:
-            print(self is event.widget)     # TODO delete this line
+            
             index = self.curselection()[0]
             value = self.get(index),
 
