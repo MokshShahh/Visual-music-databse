@@ -136,8 +136,7 @@ if __name__ == '__main__':
     albumList.link(songList, "album")
 
     # ===== Main loop =====
-    # testList = range(0, 100)
-    # albumLV.set(tuple(testList))
+    
     mainWindow.mainloop()
     print("closing database connection")
     conn.close()
