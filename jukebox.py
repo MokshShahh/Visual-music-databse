@@ -53,10 +53,10 @@ class DataListBox(Scrollbox):
         self.link_value = link_value    # store the id, so we know the "master" record we're populated from
         if link_value and self.link_field:
             sql = self.sql_select + " WHERE " + self.link_field + "=?" + self.sql_sort
-            print(sql)      # TODO delete this line
+            
             self.cursor.execute(sql, (link_value,))
         else:
-            print(self.sql_select + self.sql_sort)      # TODO delete this line
+            
             self.cursor.execute(self.sql_select + self.sql_sort)
 
         # clear the listbox contents before re-loading
