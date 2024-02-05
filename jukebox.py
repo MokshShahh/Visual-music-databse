@@ -44,6 +44,7 @@ class DataListBox(Scrollbox):
 
     def clear(self):
         self.delete(0, tkinter.END)
+        
 
     def link(self, widget, link_field):
         self.linked_box = widget
@@ -66,6 +67,7 @@ class DataListBox(Scrollbox):
 
         if self.linked_box:
             self.linked_box.clear()
+            
 
     def on_select(self, event):
         if self.linked_box:
